@@ -31,10 +31,7 @@ export default function LanguageSwitcher(props) {
                 }
             >
                 <option value="en">English ({t("english")})</option>
-                <option value="es">Español ({t("spanish")})</option>
-                <option value="id">Indonesian ({t("indonesian")})</option>
-                <option value="et">Estonian ({t("estonian")})</option>
-                <option value="fr">Français ({t("french")})</option>
+                <option value="ru">Russian ({t("russian")})</option>
             </select>
         </div>
     );

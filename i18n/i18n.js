@@ -7,6 +7,7 @@ import translationES from "public/locales/es/translation.json";
 import translationID from "public/locales/id/translation.json";
 import translationET from "public/locales/et/translation.json";
 import translationFR from "public/locales/fr/translation.json";
+import translationRU from "public/locales/ru/translation.json";
 
 const resources = {
     en: {
@@ -24,6 +25,9 @@ const resources = {
     fr: {
         translation: translationFR,
     },
+    ru: {
+        translation: translationRU,
+    },
 };
 i18n
     .use(LanguageDetector)
@@ -33,9 +37,9 @@ i18n
         react: {
             useSuspense: false,
         },
-        fallbackLng: "en",
+        fallbackLng: "ru",
         interpolation: {
             format,
         },
-        whitelist: ["es", "en", "id", "et", "fr"],
+        whitelist: ["es", "en", "id", "et", "fr", "ru"],
     });
